@@ -20,7 +20,7 @@
 windows_package "AdbeRdr11000_en_US" do
   source node[:acrobat][:install_url]
   action :install
-  not_if {::File.exists?(nodet[:acrobat][:acrord])}
+  not_if {::File.exists?(node[:acrobat][:acrord])}
   not_if {reboot_pending?}
 end
 
