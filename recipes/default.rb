@@ -18,14 +18,14 @@
 #
 # Install acrobat Reader 11.0
 windows_package "AdbeRdr11000_en_US" do
-  source node[:acrobat][:install_url]
+  source node['acrobat']['install_url']
   action :install
-  not_if {::File.exists?(node[:acrobat][:acrord])}
+  not_if {::File.exists?(node['acrobat']['acrord'])}
   not_if {reboot_pending?}
 end
 
 # disable acrobat update
-registry_key node[:acrobat][:featurelockdown] do
+registry_key node['acrobat']['featurelockdown'] do
   values [{
     :name => "bUpdater",
     :type => :dword,

@@ -17,6 +17,6 @@
 # limitations under the License.
 #
 
-default[:acrobat][:install_url] = "https://dl.dropboxusercontent.com/u/36379525/AdbeRdr11000_en_US.msi"
-default[:acrobat][:featurelockdown] = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Policies\\Adobe\\Acrobat Reader\\11.0\\FeatureLockDown"
-default[:acrobat][:acrord] = "C:/Program Files (x86)/Adobe/Reader 11.0/Reader/AcroRd32.exe"
+default['acrobat']['install_url'] = "https://dl.dropboxusercontent.com/u/36379525/AdbeRdr11000_en_US.msi"
+default['acrobat']['featurelockdown'] = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Policies\\Adobe\\Acrobat Reader\\11.0\\FeatureLockDown"
+default['acrobat']['acrord'] = "C:/Program Files (x86)/Adobe/Reader 11.0/Reader/AcroRd32.exe"
