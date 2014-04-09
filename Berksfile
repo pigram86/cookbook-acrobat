@@ -3,4 +3,4 @@ site :opscode
 metadata
 
 cookbook 'chef_handler'
-cookbook 'windows'
+cookbook 'windows', '~> 1.30.2'
